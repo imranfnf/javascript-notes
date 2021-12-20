@@ -147,7 +147,7 @@ const companies = [
 
 
 
-// const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // let canNotDrink = [];
 
@@ -225,3 +225,35 @@ const companies = [
 // 'Company Eight',
 // 'Company Nine'
 
+// Test Map:
+
+// const testMap = companies.map(function(company){
+//     return `${company.name} [${company.start} - ${company.end}]`
+// });
+
+// console.log(testMap)
+
+//  result=
+//'Company One [1981- 2003]',
+//   'Company Two [1992- 2008]',
+//   'Company Three [1999- 2007]',
+//   'Company Four [1989- 2010]',
+//   'Company Five [2009- 2014]',
+//   'Company Six [1987- 2010]',
+//   'Company Seven [1986- 1996]',
+//   'Company Eight [2011- 2016]',
+//   'Company Nine [1981- 1989]'
+
+
+
+// Sort:
+
+// const sortedAges = ages.sort((a, b) => a - b);
+
+// console.log(sortedAges)
+
+//  result = [
+//    5, 12, 13, 15, 16, 20,
+//    21, 25, 32, 33, 44, 45,
+//    54, 61, 64
+//  ]
