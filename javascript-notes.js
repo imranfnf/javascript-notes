@@ -124,18 +124,18 @@
 
 //All in One concept:::::::::::::
 
-const companies = [
-{name: "Company One", category: "Finance", start: 1981, end: 2003},
-{name: "Company Two", category: "Retail", start: 1992, end: 2008},
-{name: "Company Three", category: "Auto", start: 1999, end: 2007},
-{name: "Company Four", category: "Retail", start: 1989, end: 2010},
-{name: "Company Five", category: "Technology", start: 2009, end: 2014},
-{name: "Company Six", category: "Finance", start: 1987, end: 2010},
-{name: "Company Seven", category: "Auto", start: 1986, end: 1996},
-{name: "Company Eight", category: "Technology", start: 2011, end: 2016},
-{name: "Company Nine", category: "Retail", start: 1981, end: 1989}
+// const companies = [
+// {name: "Company One", category: "Finance", start: 1981, end: 2003},
+// {name: "Company Two", category: "Retail", start: 1992, end: 2008},
+// {name: "Company Three", category: "Auto", start: 1999, end: 2007},
+// {name: "Company Four", category: "Retail", start: 1989, end: 2010},
+// {name: "Company Five", category: "Technology", start: 2009, end: 2014},
+// {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+// {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+// {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
+// {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
 
-];
+// ];
 
 
 // //forEach:
@@ -147,7 +147,7 @@ const companies = [
 
 
 
-const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+// const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // let canNotDrink = [];
 
@@ -257,3 +257,35 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //    21, 25, 32, 33, 44, 45,
 //    54, 61, 64
 //  ]
+
+
+// creating constructor::
+
+
+const student1 = new Student("Imran Khan", 28, 1459, "Bangladesh");
+const student2 = new Student("Ramisa", 2, 1460, "Pakistan");
+const student3 = new Student("Evana", 12, 1461, "Nepal");
+const student4 = new Student("Tikli", 19, 1448, "Japan");
+
+function Student(name,age,id,country){
+
+     this.name = name;
+     this.age = age;
+     this.id = id;
+     this.country = country;
+
+    this.display = function(){
+      console.log(this.name);
+      console.log(this.age);
+      console.log(this.id);
+      console.log(this.country);
+    }
+
+}
+
+student2.display();
+
+
+
+
+
